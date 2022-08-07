@@ -1,26 +1,298 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 62.5%;
+
 }
 
-@media (prefers-color-scheme: dark) {
+p {
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 3rem;
+}
+.navbar h1 {
+  font-size: 3rem;
+  padding: 0 4rem 0 2rem;
+  cursor: pointer;
+  color: white;
+  letter-spacing: 0.3rem;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar li {
+  padding: 2rem;
+  list-style-type: none;
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+  color: rgb(255, 245, 245);
+}
+.navbar {
+  margin-bottom: 8rem;
+}
+.navbar nav {
+  display: flex;
+  align-items: center;
+  height: 8rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  background-color: rgb(61, 128, 170);
+  margin-bottom: 30rem;
+}
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+.hamburger .bar {
+  height: 0.2rem;
+  width: 4rem;
+  margin: 0.8rem;
+  background-color: white;
+}
+.landing-page img {
+  height: 50rem;
+  width: 70rem;
+}
+.landing-page {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 0.2rem solid purple;
+  padding-bottom: 10rem;
+}
+.landing-page.heading {
+  text-align: center;
+}
+
+.landing-page.image {
+  display: grid;
+  justify-content: right;
+}
+.landing-page .btn {
+  background-color: #405cf5;
+  border-radius: 0.6rem;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 0.1rem inset,
+    rgba(50, 50, 93, 0.1) 0 0.2rem 0.5rem 0,
+    rgba(0, 0, 0, 0.07) 0 0.1rem 0.1rem 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    Ubuntu, sans-serif;
+  height: 4.4rem;
+  line-height: 1.15;
+  margin: 1.2rem 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 2.5rem;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+}
+.landing-page .btn:hover {
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 0.1rem inset,
+    rgba(50, 50, 93, 0.2) 0 0.6rem 1.5rem 0,
+    rgba(0, 0, 0, 0.1) 0 0.2rem 0.2rem 0, rgba(50, 151, 211, 0.3) 0 0 0 0.4rem;
+}
+.landing-page h1 {
+  font-size: 4rem;
+}
+.landing-page span {
+  font-size: 4rem;
+  color: purple;
+  font-family: serif;
+  letter-spacing: 0.2rem;
+}
+
+.latest-post .main-title {
+  padding: 5rem 0;
+  text-align: center;
+}
+.blog-card {
+  cursor: pointer;
+  display: inline-block;
+  margin: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0rem 0.3rem 0.8rem;
+}
+.blog-card p {
+  width: 34rem;
+  text-align: justify;
+  padding: 2rem 1rem;
+}
+.blog-card h1 {
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+.blog-card img {
+  width: 38rem;
+}
+
+.blog-card .read-more {
+  background-color: #405cf5;
+  color: white;
+  margin: 0 1rem 2rem 1rem;
+  border: 0;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0rem 0.1rem 0.4rem;
+}
+.blog-card .read-more:hover {
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 0.1rem inset,
+    rgba(50, 50, 93, 0.2) 0 0.6rem 1.5rem 0,
+    rgba(0, 0, 0, 0.1) 0 0.2rem 0.2rem 0, rgba(50, 151, 211, 0.3) 0 0 0 0.4rem;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.blog {
+  margin: 10rem;
+}
+.blog h1 {
+  font-size: 2.5rem;
+}
+.footer {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 30rem auto;
+  height: 8rem;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.35) 0rem 0.5rem 1.5rem;
+}
+.footer h1 {
+  text-align: center;
+  font-weight: 300;
+  padding-left: 10rem;
+}
+input {
+  display: block;
+  width: 40rem;
+  font-size: 2rem;
+  padding: 1rem;
+}
+textarea {
+  display: block;
+  width: 40rem;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.contact {
+  margin: 10rem;
+}
+.contact h1 {
+  margin: 2rem 0;
+}
+.form {
+  display: grid;
+  justify-content: center;
+}
+.form button {
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #405cf5;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: white;
+  margin: 2rem 0;
+}
+
+/* CSS Responsive */
+
+@media only screen and (max-width: 992px) {
   html {
-    color-scheme: dark;
+    font-size: 55%;
   }
-  body {
-    color: white;
-    background: black;
+  .landing-page img {
+    width: 50rem;
   }
+}
+@media only screen and (max-width: 750px) {
+  .landing-page img {
+    width: 40rem;
+  }
+}
+@media only screen and (max-width: 620px) {
+  html {
+    font-size: 50%;
+  }
+  .landing-page {
+    grid-template-columns: auto;
+  }
+  .landing-page img {
+    width: 100%;
+    order: 1;
+  }
+  .landing-page .heading {
+    order: 2;
+    text-align: center;
+  }
+  .footer {
+    grid-template-columns: 20rem auto;
+    align-items: left;
+  }
+  .footer h1 {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .navbar ul {
+    display: none;
+  }
+  .landing-page img {
+    width: 100vw;
+    height: 20rem;
+  }
+
+  .hamburger {
+    display: block;
+    margin-right: 2rem;
+  }
+  .navbar nav {
+    justify-content: space-between;
+  }
+}
+
+.responsive-nav {
+  position: fixed;
+  top: 7.2rem;
+}
+ul {
+  background-color: rgb(61, 128, 170);
+  width: 100vw;
+}
+ul li {
+  padding: 2rem;
+  list-style-type: none;
+}
+ul a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+  color: rgb(255, 245, 245);
 }
