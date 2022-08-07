@@ -1,8 +1,17 @@
 import Head from "next/head";
 import App from "../Components/App";
-import Navbar from "../Components/Navbar";
+export async function getStaticProps() {
+  let url = "http://localhost:1337/api/posts?populate=*";
+  let res = await fetch(url);
+  let mydata = await res.json();
 
-export default function Home() {
+  return {
+    props: {
+      data: mydata.data,
+    },
+  };
+}
+export default function Home({data}) {
   return (
     <div>
       <Head>
@@ -11,7 +20,7 @@ export default function Home() {
       </Head>
 
       <div>
-        <App />
+        <App data={data}/>
       </div>
     </div>
   );

@@ -8,7 +8,6 @@
 }
 html {
   font-size: 62.5%;
-
 }
 
 p {
@@ -127,11 +126,11 @@ h1 {
 .blog-card {
   cursor: pointer;
   display: inline-block;
-  margin: 2rem;
+  margin: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0rem 0.3rem 0.8rem;
 }
 .blog-card p {
-  width: 34rem;
+  width: 30rem;
   text-align: justify;
   padding: 2rem 1rem;
 }
@@ -140,7 +139,7 @@ h1 {
   font-size: 2.5rem;
 }
 .blog-card img {
-  width: 38rem;
+  width: 32rem;
 }
 
 .blog-card .read-more {
@@ -168,13 +167,14 @@ h1 {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .blog {
-  margin: 10rem;
+  margin: 4rem 1rem;
 }
-.blog h1 {
+.blog .heading {
   font-size: 2.5rem;
+  margin-top: 12rem;
 }
 .footer {
   margin-top: 10rem;
@@ -221,7 +221,13 @@ textarea {
   color: white;
   margin: 2rem 0;
 }
-
+.singlePost {
+  margin: 10rem 10rem;
+  text-align: justify;
+}
+.singlePost h1 {
+  font-size: 3rem;
+}
 /* CSS Responsive */
 
 @media only screen and (max-width: 992px) {
@@ -235,6 +241,9 @@ textarea {
 @media only screen and (max-width: 750px) {
   .landing-page img {
     width: 40rem;
+  }
+  .singlePost {
+    margin: 10rem 5rem;
   }
 }
 @media only screen and (max-width: 620px) {
@@ -275,6 +284,9 @@ textarea {
   }
   .navbar nav {
     justify-content: space-between;
+  }
+  .singlePost {
+    margin: 10rem 1rem;
   }
 }
 

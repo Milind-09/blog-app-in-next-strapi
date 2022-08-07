@@ -3,11 +3,11 @@ import Footer from "./Footer";
 import LandingPage from "./LandingPage";
 import LatestPost from "./LatestPost";
 
-export default function App() {
+export default function App({data}) {
   return (
     <div className="app">
       <LandingPage />
-      <LatestPost />
+      <LatestPost data={data}/>
       <Footer />
     </div>
   );

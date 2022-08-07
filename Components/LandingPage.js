@@ -10,7 +10,7 @@ export default function LandingPage() {
           </h1>
           <p>Confused on which laptop to buy? </p>
           <p>Spend Your Money on Perfect Laptop by Reading our blogs</p>
-          <Link href="/blogs">
+          <Link href="/blog">
             <button className="btn">Explore Blogs</button>
           </Link>
         </div>
